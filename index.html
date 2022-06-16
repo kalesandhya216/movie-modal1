@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="header bg-primary text-white p-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>
+                    Movie Gallary
+                </h3>
+            </div>
+            <div class="col-sm-6 text-right">
+                <button class="btn btn-success" id="showModel">Add movie</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row" id="movieContainer">
+                <!-- <div class="col-md-4">
+                    <div class="card movieCard">
+                        <div class="card-body">
+                            <figure>
+                                <img src="" alt="" class="img-responsive">
+                                <figcaption>
+                                    <h3 class="title">
+                                        Andhadhund
+                                    </h3>
+                                    <p class="rating">
+                                        5/5
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <div id="backDrop"></div>
+    <div id="myModel" class="mymodel">
+        <!-- <form action=""> -->
+            <div class="mHeader p-2 bg-success text-white">
+                <h3>
+                    Add movie details
+                </h3>
+                <i class="fas fa-times hideModel"></i>
+            </div>
+
+        <form id="movieform">
+            <div class="mBody p-3">
+                
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="url">Image Url</label>
+                        <input type="text" name="url" id="url" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="text" name="rating" id="rating" class="form-control" required>
+                    </div>
+                
+            </div>
+            <div class="mFooter p-3 text-right">
+                <input type="submit" value="Add movie" class="btn btn-success" id="AddMovieBtn">
+                <input type="button" value="cancel" class="btn btn-danger hideModel">
+            </div>
+        </form>
+        <!-- </form> -->
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
